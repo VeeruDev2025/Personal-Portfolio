@@ -7,8 +7,9 @@
 }
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable; /* Prevents layout shifts when scrollbar appears */
 }
-
+ 
 /* Add to your global CSS */
 html {
   scroll-behavior: smooth;
