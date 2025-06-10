@@ -1,0 +1,42 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  height: 100vh;
+  align-items: center;
+}
+
+.loader-bar {
+  width: 4px;
+  height: 50px;
+  animation: bounce 0.9s infinite;
+}
+.bar1 {
+  background: #4c86f9;
+}
+.bar2 {
+  background: #49a84c;
+  animation-delay: 0.1s;
+}
+.bar3 {
+  background: #f6bb02;
+  animation-delay: 0.2s;
+}
+.bar4 {
+  background: #f6bb02;
+  animation-delay: 0.3s;
+}
+.bar5 {
+  background: #2196f3;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scaleY(0.1);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}

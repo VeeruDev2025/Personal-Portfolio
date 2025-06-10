@@ -1,0 +1,130 @@
+.skills-section {
+  padding: 4rem 0;
+  background-color: #f8fafc;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+/* Wrapper for center scroll and blur sides */
+.skills-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* Adjust based on 5 items width */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Main scrolling container */
+.skills-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Track with scroll effect */
+.skills-track {
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+  animation: scroll 25s linear infinite;
+}
+
+/* Each skill item */
+
+.skill-item {
+  flex: 0 0 auto;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item span {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Blur gradient edges */
+.skills-fade-left,
+.skills-fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.skills-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #f8fafc 0%, transparent 100%);
+}
+
+.skills-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #f8fafc 0%, transparent 100%);
+}
+
+/* Scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skill-item {
+    width: 100px;
+    padding: 0.75rem;
+  }
+
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skills-track {
+    gap: 1rem;
+  }
+
+  .skills-wrapper {
+    max-width: 90%;
+  }
+}

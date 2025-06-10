@@ -1,0 +1,198 @@
+/* General body styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main portfolio section padding */
+.portfolio-section {
+  padding: 60px 20px;
+}
+
+/* Container to center content and limit max width */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section title styling */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+/* Tabs container - horizontal layout with spacing */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* wrap on small screens */
+}
+
+/* Individual tab button styles */
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on tabs */
+.tab-btn:hover {
+  background-color: #ccc;
+  transform: translateY(-2px);
+}
+
+/* Active tab button style */
+.tab-btn.active {
+  background-color: #2563eb; /* blue */
+  color: #fff;
+}
+
+/* Grid container for project cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Single project card styling */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Project image container */
+.project-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+/* Project image styling */
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.3s ease;
+}
+
+/* Hover effect on project image */
+.project-image:hover img {
+  transform: scale(1.1) rotate(1deg);
+  filter: brightness(1.05);
+}
+
+/* Content area inside each project card */
+.project-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Project title styles */
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+/* Project description text */
+.project-description {
+  color: #4b5563;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Container for technology info */
+.project-tech {
+  margin-bottom: 1.5rem;
+}
+
+/* Individual tech item (languages, tech stack) */
+.tech-item {
+  margin-bottom: 0.5rem;
+}
+
+/* Label for tech items */
+.tech-label {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Value text for tech items */
+.tech-value {
+  color: #4b5563;
+}
+
+/* Container for project links (demo & source code) */
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; /* push links to bottom */
+}
+
+/* Link styling */
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect on links */
+.project-link:hover {
+  color: #1d4ed8;
+  transform: translateX(2px);
+}
+
+/* Wrapper for the "View More" button */
+.view-more-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Styling the "View More" button */
+.view-more-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on "View More" button */
+.view-more-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  /* Stack tabs vertically on small screens */
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+}

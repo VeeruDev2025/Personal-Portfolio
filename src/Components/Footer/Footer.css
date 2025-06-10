@@ -1,0 +1,107 @@
+/* Footer.css */
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  width: 100%;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.footer-nav a:hover {
+  color: #4a6cf7;
+}
+
+.footer-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #4a6cf7;
+  transition: width 0.3s ease;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-link {
+  color: #555;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  padding: 0.3rem;
+}
+
+.social-link:hover {
+  color: #4a6cf7;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Specific brand colors for each social icon */
+.social-link:nth-child(1):hover {
+  /* Facebook */
+  color: #1877f2;
+}
+
+.social-link:nth-child(2):hover {
+  /* Twitter */
+  color: #1da1f2;
+}
+
+.social-link:nth-child(3):hover {
+  /* Instagram */
+  color: #e1306c;
+}
+
+.social-link:nth-child(4):hover {
+  /* LinkedIn */
+  color: #0077b5;
+}
+
+.copyright {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .footer-nav {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-link {
+    font-size: 1.2rem;
+  }
+}

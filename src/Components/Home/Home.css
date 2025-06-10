@@ -1,0 +1,264 @@
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Home Section */
+.home-section {
+  padding: 4rem 1rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Grid layout */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+/* Left and Right 50/50 */
+.left-content,
+.right-content {
+  width: 100%;
+}
+
+/* Left content styling */
+.tagline {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+.tagline .icon {
+  margin-right: 8px;
+  color: #fbbf24;
+}
+
+.heading-wrapper h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .heading-wrapper h1 {
+    font-size: 3rem;
+  }
+}
+.highlight {
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+.heading-wrapper p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn.primary {
+  background-color: #3b82f6;
+  color: white;
+}
+.btn.primary:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+.btn.secondary {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  background: white;
+}
+.btn.secondary:hover {
+  background-color: #3b82f6;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Social Features grid */
+.features-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #444;
+  width: 80px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.feature:hover {
+  color: #3b82f6;
+  transform: translateY(-3px);
+}
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  transition: transform 0.3s ease;
+}
+.feature:hover .feature-icon {
+  transform: scale(1.1);
+}
+.bg-black {
+  background-color: #000;
+}
+.bg-linkedin {
+  background-color: #0077b5;
+}
+.bg-twitter {
+  background-color: #1da1f2;
+}
+.bg-red {
+  background-color: #ef4444;
+}
+.social {
+  font-size: 1.25rem;
+  color: white;
+  background: transparent;
+}
+
+/* Right content image & badges */
+.image-wrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.image-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  border-radius: 20px;
+  top: 15px;
+  left: 10px;
+  z-index: 0;
+  filter: blur(60px);
+  opacity: 0.7;
+}
+.profile-image {
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  display: block;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.badge:hover {
+  transform: translateY(-3px);
+}
+.badge-icon {
+  font-size: 1.25rem;
+}
+.frontend-icon {
+  color: #3b82f6;
+}
+.backend-icon {
+  color: #fbbf24;
+}
+.react-icon {
+  color: #61dafb;
+}
+.python-icon {
+  color: #ffd43b;
+}
+
+.frontend {
+  top: 1rem;
+  left: 1rem;
+}
+.backend {
+  top: 1rem;
+  right: 1rem;
+}
+.python {
+  bottom: 1rem;
+  left: 1rem;
+}
+.react {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+/* Responsive - mobile stack */
+@media (max-width: 768px) {
+  .home-section {
+    padding: 2rem 1rem;
+  }
+
+  .heading-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .feature {
+    width: 60px;
+    font-size: 0.875rem;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social {
+    font-size: 1rem;
+  }
+}

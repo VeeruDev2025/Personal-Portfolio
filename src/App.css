@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add to your global CSS */
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  overflow-anchor: none; /* Disables browser's scroll anchoring */
+}
