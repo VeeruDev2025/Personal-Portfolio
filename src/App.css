@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable; /* Prevents layout shifts when scrollbar appears */
 }
- 
+
 /* Add to your global CSS */
 html {
   scroll-behavior: smooth;
@@ -18,4 +18,14 @@ html {
 
 body {
   overflow-anchor: none; /* Disables browser's scroll anchoring */
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#21d4fd, #b721ff);
+  border-radius: 100px;
 }
